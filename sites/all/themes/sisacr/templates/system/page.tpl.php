@@ -114,9 +114,23 @@
 <?php endif; // end Below Content ?>
 
 <footer class="footer" role="contentinfo">
-  <div class="">
-    <?php print render($page['footer']); ?>
-  </div>
+  <?php if ($page['footer']): ?>
+    <div class="footer-full-width full-width">
+      <?php print render($page['footer']); ?>
+    </div>
+  <?php endif; // end Footer Full ?>
+
+  <?php if ($page['footer_left'] || $page['footer_center'] || $page['footer_right']): ?>
+    <div class="footer-left-col col-1-3">
+      <?php print render($page['footer_left']); ?>
+    </div>
+    <div class="footer-center-col col-1-3">
+      <?php print render($page['footer_center']); ?>
+    </div>
+    <div class="footer-right-col col-1-3">
+      <?php print render($page['footer_right']); ?>
+    </div>
+  <?php endif; // end Footer Cols ?>
 </footer>
 
 <?php if ($page['closure']): ?>

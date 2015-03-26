@@ -35,6 +35,10 @@ regions[sidebar_second]     = Sidebar Second
 regions[below_content]      = Below Content
 
 regions[footer]             = Footer
+regions[footer_left]             = Footer Left
+regions[footer_center]             = Footer Center
+regions[footer_right]             = Footer Right
+
 regions[closure]            = Closure
 
 ;-------------- C S S -------------

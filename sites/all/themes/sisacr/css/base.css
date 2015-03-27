@@ -1,7 +1,7 @@
 /* ==========================================================================
    =Base
    ========================================================================== */
-*,
+/**,
 *:after,
 *:before {
   -webkit-box-sizing: border-box;
@@ -13,12 +13,12 @@ body {
   color: #333;
   font: 1em/1.75em 'Helvetica Neue', Arial, sans-serif;
   padding: 1em;
-}
+}*/
 
 /*
   =LINKS
 --------------------------------------------- */
-a:link,
+/*a:link,
 a:visited {
   border-bottom: 1px solid rgb(200,200,200);
   text-decoration: none;
@@ -34,13 +34,13 @@ a:hover {
 
 a:active {
   outline: none;
-}
+}/*
 
 /*
   =SELECTIONS
 --------------------------------------------- */
 
-::-moz-selection {
+/*::-moz-selection {
   background: rgb(100,100,100);
   color: rgb(255,255,255);
   text-shadow: none;
@@ -187,4 +187,4 @@ img, embed, object, video {
   max-width: 100%;
   height: inherit;
   _width: 100%;
-  }
+  }*/

@@ -121,15 +121,17 @@
   <?php endif; // end Footer Full ?>
 
   <?php if ($page['footer_left'] || $page['footer_center'] || $page['footer_right']): ?>
-    <div class="footer-left-col col-1-3">
-      <?php print render($page['footer_left']); ?>
-    </div>
-    <div class="footer-center-col col-1-3">
-      <?php print render($page['footer_center']); ?>
-    </div>
-    <div class="footer-right-col col-1-3">
-      <?php print render($page['footer_right']); ?>
-    </div>
+    <div class="footer-content  ">
+      <div class="footer-left-col col-1-3">
+        <?php print render($page['footer_left']); ?>
+      </div>
+      <div class="footer-center-col col-1-3">
+        <?php print render($page['footer_center']); ?>
+      </div>
+      <div class="footer-right-col col-1-3">
+        <?php print render($page['footer_right']); ?>
+      </div>
+  </div>
   <?php endif; // end Footer Cols ?>
 </footer>
 

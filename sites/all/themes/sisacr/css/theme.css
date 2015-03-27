@@ -1,34 +1,9 @@
 /* ==========================================================================
    =Theme
    ========================================================================== */
-#logo {
+/*#logo {
   border: 0;
 }
 #logo:hover {
   background: transparent;
-}
-body .header{
-	background: none;
-}
-.header .menu li{
-	display: inline-block;
-	padding: 0px; margin: 0px;
-}
-.header .menu li a{
-	min-height: 55px;
-	margin-right: 10px;
-	padding: 10px 15px;
-	border: 2px solid white;
-	-webkit-transition: all 550ms ease;
-	transition: all 550ms ease;
-	font-family: Montserrat, sans-serif;
-	color: #404041;
-	font-size: 12px;
-	line-height: 16px;
-	font-weight: 400;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-.header .menu li a:hover {
-  border: 2px solid #099dad;
-}
+}*/

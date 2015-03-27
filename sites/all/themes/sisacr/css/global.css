@@ -1,0 +1,167 @@
+html{
+	border: none;
+}
+body{
+	margin: 0px;
+}
+body .header{
+	background: none;
+	padding-top: 15px;
+	height: 150px;
+	box-sizing:border-box;
+}
+#logo{
+	display:block;
+	float:left;
+}
+#block-system-main-menu{
+	margin-left: 15px;
+	margin-top: 50px;
+	float: right;
+}
+.header .menu li{
+	display: inline-block;
+	padding: 0px; margin: 0px;
+	float:left;
+}
+.header .menu li a{
+	min-height: 55px;
+	margin-right: 0px;
+	padding: 10px 8px;
+	padding-bottom: 0px;
+	border: 2px solid white;
+	-webkit-transition: all 550ms ease;
+	transition: all 550ms ease;
+	font-family: Montserrat, sans-serif;
+	color: #404041;
+	font-size: 11px;
+	line-height: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	max-width: 100px;
+}
+.header .menu li a:hover {
+  border: 2px solid #099dad;
+}
+.front .main-content{
+	max-width: 1280px;
+}
+.front .main-content .panel-pane{
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.front .main-content .pane-views-slider-block{
+	max-width: 1280px !important;
+}
+
+
+/*SLIDER*/
+
+.flexslider{
+	margin: 0px;
+	background: none;
+	border: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-o-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;	
+}
+
+.front .flex-caption{
+	position: absolute;
+	width: 1000px;
+	top: 40%;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;	
+	text-align: center;
+	background-image: url('../images/bg_caption.png');
+	background-repeat: repeat;
+	padding: 25px 0px 35px 0px;
+	
+}
+.front .flex-caption .slider-home-title h3{
+	font-family: Ubuntu, sans-serif;
+	font-size: 47px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: white;
+	margin: 0px;
+}
+.front .flex-caption .slider-home-desc p{
+	font-family: Roboto, sans-serif;
+	font-size: 26px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: white;
+	margin-bottom: 15px; margin-top: 15px; 	
+}
+.front .flex-caption .slider-home-button a{
+	display:block;
+	width: 215px;
+	margin: 0 auto;
+  padding: 13px 0px;
+  border: 2px solid white;
+  border-radius: 4px;
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;   
+}
+.front .flex-caption .slider-home-button a:hover{
+	background: rgba(0,0,0,0.4);
+	transform: scale(1.07,1.07);
+	-webkit-transform: scale(1.07,1.07);
+}
+.front .flex-control-paging{
+	display: none;
+}
+.front .flex-direction-nav{
+	/*width: 1000px;
+	margin: 0 auto;
+	position: absolute;
+	margin-top: -90px;
+	right: 0px;
+	left: 0px;*/
+}
+.front .flex-direction-nav li a{
+	width: 70px;
+	height: 70px;
+	overflow:hidden; 
+	
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.front .flex-direction-nav li a:before{
+  content: '';
+  margin-left: 100px;
+  height: 70px;	
+}
+
+.front .flex-direction-nav a.flex-prev{
+	background-image: url('../images/prev.png');
+}
+.front .flex-direction-nav a.flex-next{
+	background-image: url('../images/next.png');
+}
+
+
+/*********/
+
+/* FOOTER */
+.footer{
+	background-color: #404041;
+}

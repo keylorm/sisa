@@ -121,7 +121,7 @@
   <?php endif; // end Footer Full ?>
 
   <?php if ($page['footer_left'] || $page['footer_center'] || $page['footer_right']): ?>
-    <div class="footer-content  ">
+    <div class="footer-content">
       <div class="footer-left-col col-1-3">
         <?php print render($page['footer_left']); ?>
       </div>

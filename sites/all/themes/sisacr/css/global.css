@@ -47,15 +47,19 @@ body .header{
   border: 2px solid #099dad;
 }
 .front .main-content{
-	max-width: 1280px;
+	max-width: 100%;
 }
-.front .main-content .panel-pane{
+/*.front .main-content .panel-pane .pane-content*/
+.grid-1000{
 	max-width: 1000px;
 	margin: 0 auto;
 	overflow: hidden;
 }
-.front .main-content .pane-views-slider-block{
+.front .main-content .pane-views-slider-block .pane-content,
+.grid-1280{
 	max-width: 1280px !important;
+	margin: 0 auto;
+	overflow: hidden;	
 }
 
 .breadcrumb,
@@ -100,7 +104,7 @@ body .header{
 	
 }
 .front .flex-caption .caption-cuadro-texto{
-	background: rgba(0,157,173,.6);
+	background: rgba(0,157,173,.8);
 	-webkit-transform:skewX(-20deg);
 	-moz-transform:skewX(-20deg);
 	-ms-transform:skewX(-20deg);
@@ -115,12 +119,16 @@ body .header{
 	-o-transform:skewX(20deg);
 	transform:skewX(20deg);
 }
+.front .flex-caption .caption-cuadro-texto .cap-content h3{
+	margin: 0px;
+}
 .front .flex-caption .caption-cuadro-texto .cap-content h3 p{
 	font-family: Montserrat, sans-serif;
 	font-size: 28px;
 	text-transform: uppercase;
 	font-weight: normal;
 	color: white;
+	margin: 0px;
 }
 .front .flex-caption .caption-cuadro-texto .cap-content h3 p strong{
 	font-weight: bold;
@@ -129,7 +137,8 @@ body .header{
 	font-family: Roboto, sans-serif;
 	font-size: 19px;
 	font-weight: normal;
-	color: white;	
+	color: white;
+	margin: 15px 0;	
 }
 .front .flex-caption .caption-boton a{
 	display:block;
@@ -152,26 +161,17 @@ body .header{
   transition: all 500ms ease;   
 }
 .front .flex-caption .caption-boton a:hover{
-	background: rgba(0,0,0,0.4);
 	transform: scale(1.07,1.07);
 	-webkit-transform: scale(1.07,1.07);
 }
 .front .flex-control-paging{
 	display: none;
 }
-.front .flex-direction-nav{
-	/*width: 1000px;
-	margin: 0 auto;
-	position: absolute;
-	margin-top: -90px;
-	right: 0px;
-	left: 0px;*/
-}
 .front .flex-direction-nav li a{
 	width: 55px;
 	height: 70px;
 	overflow:hidden; 
-	
+	top: 47%;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -188,12 +188,290 @@ body .header{
 .front .flex-direction-nav a.flex-next{
 	background-image: url('../images/next.png');
 }
-
-
 /*********/
 
+/* ISLAS HOME */ 
+.pane-block-4{
+	padding-bottom: 60px;
+}
+.pane-block h2{
+	color: #404041;
+	text-align:center;
+	line-height: 65px;
+	font-weight: normal;		
+}
+.areas-home {
+  width: 100%;
+}
+.areas-home-col {
+  width: 33%;
+  float: left;
+  min-height: 465px;
+  position: relative;  
+}
+.ico {
+  display: block;
+  width: 165px;
+  height: 165px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+.ico.ico-areas-metales {
+  background-image: url('../images/icon_metales.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.ico.ico-areas-impre {
+  background-image: url('../images/icon_impresion.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.ico.ico-areas-repu {
+  background-image: url('../images/icon_repuestos.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.areas-home-col h3 {
+  margin-bottom: 30px;
+  font-family: Montserrat, sans-serif;
+  color: #099dad;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  height: 27px;
+}
+.areas-home-col p {
+  margin-bottom: 30px;
+  font-family: Roboto, sans-serif;
+  color: #404041;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: none;
+  padding: 0px 15px;
+  margin: 0px;
+}
+.areas-home-col p a{
+  display: block;
+  width: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 15px;
+  border: 4px solid #099dad;
+  font-family: Montserrat, sans-serif;
+  color: #099dad;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;  
+}
+
+/**************/
+.pane-block{
+	
+}
+.pane-block-5{
+	padding-bottom: 40px;
+	background-color: #EDEDEE;
+	background-image: url(../images/bg_especialistas_home.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.pane-block-5 .home-especialistas{
+
+}
+.pane-block-5 .home-especialistas .col-1-2{
+	width: 435px;
+	float:left;
+}
+.pane-block-5 .home-especialistas .col-1-2-2{
+	float:right;
+}
+.pane-block-5 .home-especialistas h3{
+	color: #038CA8;
+	font-family: Montserrat, sans-serif;
+	font-size: 20px;
+	font-weight: normal;	
+	text-transform:uppercase;
+
+}
+.pane-block-5 .home-especialistas p{
+	font-family: Roboto, sans-serif;
+	color: #404041;
+	font-size: 17px;
+	font-weight: 300;	
+}
+
+.pane-block-6{
+	padding-top:20px;
+	padding-bottom: 40px;
+	background-color: #EFB81C;
+	background-image: url(../images/bg_cualidades_home.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.pane-block-6 h2{
+	color: #FFF;
+}
+
+.home-cualidades{
+	overflow:hidden;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.home-cualidades .col-1-3{
+	width: 280px;
+	min-height: 45px;
+	float:left;
+	padding-left: 65px;
+	background-image: url(../images/icon_cualidades.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	box-sizing: border-box;
+	font-family: Roboto, sans-serif;
+	color: #FFF;
+	font-size: 19px;
+	line-height: 20px;
+	font-weight: 500;
+	margin-right: 85px;	
+}
+.home-cualidades .col-1-3 p{
+	margin: 0px;
+}
+
+.home-cualidades .home-cualidades-3{
+	width: 220px;
+	margin-right: 0px;
+}
+
+.lineas{
+  display:table;
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  margin:auto;
+}
+ 
+.lineas:before,
+.lineas:after {
+  position: absolute;
+  top: 50%;
+  left: 0px; /*-20*/
+  display: block;
+  height: 4px;
+  width: 30%;
+  background: #FFF;
+  content: " ";
+}
+.lineas:after {
+  left: auto;
+  right: 0px; /*-20*/
+}
+
+.pane-block-7{
+	background-color: #009DAD;
+	padding: 10px 0px;
+}
+.pane-block-7 .llamado-texto p{
+	font-family: Montserrat, sans-serif;
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #FFF;
+	float:left;	
+}
+.pane-block-7 .llamado-boton a{
+	padding: 13px 23px;
+	border: 4px solid #FFF;
+	font-family: Montserrat, sans-serif;
+	color: #FFF;
+	font-size: 15px;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	float:right;
+	margin-top: 21px;	
+}
+
+.pane-block-8{
+	padding: 40px 0px 0px 0px;
+}
+.home-historia-exito{
+	overflow:hidden;
+	background-color: #EDEDEE;
+}
+.home-historia-exito-imagen{
+	float:left;
+}
+.home-historia-exito-texto{
+	width: 450px;
+	float:left;
+	margin-left: 40px;
+}
+.home-historia-exito-texto h3{
+	color: #404041;
+	font-family: Montserrat, sans-serif;
+	font-size: 23px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 18px;
+	text-transform: uppercase;	
+}
+.home-historia-exito-texto p{
+	font-family: Roboto, sans-serif;
+	color: #404041;
+	font-size: 17px;
+	font-weight: 300;	
+}
+.home-historia-exito-texto p a{
+	padding: 10px 20px;
+	border: 4px solid #009DAD;
+	font-family: Montserrat, sans-serif;
+	color: #009DAD;
+	font-size: 15px;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	float:left;
+	margin-top: 23px;	
+}
 
 
+.home-pioneros{
+	overflow:hidden;
+	background-color: #F5F5F6;
+	margin-top: 30px;
+}
+.home-pioneros-exito-texto{
+	float:left;
+	width: 450px;
+	margin-left: 150px;
+}
+.home-pioneros-exito-texto h3{
+	color: #404041;
+	font-family: Montserrat, sans-serif;
+	font-size: 23px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 18px;
+	text-transform: uppercase;	
+}
+.home-pioneros-exito-texto p{
+	font-family: Roboto, sans-serif;
+	color: #404041;
+	font-size: 17px;
+	font-weight: 300;	
+}
+.home-pioneros-imagen{
+	float:right;
+}
 
 /*ACTUALIDAD HOME*/
 h2{
@@ -203,7 +481,7 @@ h2{
 }
 
 .view-blog{
-	padding: 30px 0px 60px 0px;
+	padding: 0px 0px 60px 0px;
 	overflow: hidden;
 }
 .view-blog .view-content{
@@ -233,8 +511,8 @@ h2{
 	margin-bottom: 40px;
 }
 .view-blog .view-content .views-row .views-field-path a{
-	padding: 8px 35px;
-	border: 3px solid #EEB91C;
+	padding: 13px 40px;
+	border: 4px solid #EEB91C;
 	font-family: Montserrat, sans-serif;
 	color: #EEB91C;
 	font-size: 15px;
@@ -247,6 +525,7 @@ h2{
 h2.amarillo{
 	color: #EFB81C;
 	margin-bottom: 40px;
+	text-align:left;
 }
 
 

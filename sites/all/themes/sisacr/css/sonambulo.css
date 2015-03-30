@@ -15,7 +15,7 @@ body {
 }
 .header .grid,
 .main-content,
-.footer {
+.footer .footer-content{ /*.footer*/
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;

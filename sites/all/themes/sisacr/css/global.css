@@ -1002,4 +1002,81 @@ h2.amarillo{
   float: right;
   margin-top: 21px;
 }
+
+
+
+/*METALES*/
+.page-node-8 h1{
+	line-height: 70px;
+	padding-left: 70px;
+	background-image: url(../images/titulo_metales.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	color: #58595B;
+}
+
+.page-node-8 .marcas{
+	margin-top: -150px;
+}
+.marcas h3{
+  text-transform: uppercase;
+  color: #404040;
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+  font-weight: bold;	
+}
+.marcas ul{
+	margin: 0px; padding: 0px; list-style:none; margin-top: 30px;
+}
+.marcas ul li{
+	margin: 0px; padding: 0px; float:left; margin-right: 10px;
+	
+}
+.marcas ul li a{
+}
+.marcas ul li a img{
+}
+
+#block-views-tipos-de-productos-block{
+}
+
+#block-views-tipos-de-productos-block h2{
+	color: #FFF;
+	background-color: #E7AA22;
+}
+.view-tipos-de-productos{
+}
+
+.view-tipos-de-productos .views-row{
+	width: 316px;
+	float:left;
+	margin-right: 26px;
+	margin-bottom: 50px;
+}
+.view-tipos-de-productos .views-row.views-row-3,
+.view-tipos-de-productos .views-row.views-row-6,
+.view-tipos-de-productos .views-row.views-row-9,
+.view-tipos-de-productos .views-row.views-row-12,
+.view-tipos-de-productos .views-row.views-row-15,
+.view-tipos-de-productos .views-row.views-row-18,
+.view-tipos-de-productos .views-row.views-row-21,
+.view-tipos-de-productos .views-row.views-row-24,
+.view-tipos-de-productos .views-row.views-row-27,
+.view-tipos-de-productos .views-row.views-row-30{
+	margin-right: 0px;
+}
+.view-tipos-de-productos .views-row a{
+	color:#038CA8;
+	font-family: Montserrat, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 25px;
+	display: block;
+	margin-top: 10px;
+	line-height: 20px;	
+}
+
+
 /**/

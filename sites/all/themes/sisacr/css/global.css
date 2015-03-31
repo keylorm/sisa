@@ -55,7 +55,7 @@ body .header{
 	margin: 0 auto;
 	overflow: hidden;
 }
-.front .main-content .pane-views-slider-block .pane-content,
+.front .main-content .pane-views-slider-block .pane-contentNO,
 .grid-1280{
 	max-width: 1280px !important;
 	margin: 0 auto;
@@ -309,16 +309,22 @@ body .header{
 	font-weight: 300;	
 }
 
-.pane-block-6{
+.pane-block-6,
+#block-block-6{
 	padding-top:20px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 	background-color: #EFB81C;
 	background-image: url(../images/bg_cualidades_home.jpg);
 	background-repeat: no-repeat;
 	background-position: right bottom;
 }
-.pane-block-6 h2{
+#block-block-6{
+	background-image: none;
+}
+.pane-block-6 h2,
+#block-block-6 h2{
 	color: #FFF;
+	text-align:center;
 }
 
 .home-cualidades{
@@ -376,18 +382,25 @@ body .header{
   right: 0px; /*-20*/
 }
 
-.pane-block-7{
+.pane-block-7,
+#block-block-11{
 	background-color: #009DAD;
 	padding: 10px 0px;
 }
-.pane-block-7 .llamado-texto p{
+.pane-block-7 .llamado-texto p,
+#block-block-11 .llamado-texto p{
 	font-family: Montserrat, sans-serif;
 	text-transform: uppercase;
 	font-size: 28px;
 	color: #FFF;
 	float:left;	
 }
-.pane-block-7 .llamado-boton a{
+#block-block-11 .llamado-texto p{
+	margin-bottom: 10px; margin-top: 10px;
+}
+
+.pane-block-7 .llamado-boton a,
+#block-block-11 .llamado-boton a{
 	padding: 13px 23px;
 	border: 4px solid #FFF;
 	font-family: Montserrat, sans-serif;
@@ -661,3 +674,332 @@ h2.amarillo{
 	font-weight: 400;
 	padding-left: 15px;	
 }
+
+
+
+
+/**** Innovacion y experiencia **/
+
+.view-imagen-top{
+	text-align:center;
+	position:relative;
+	height: 365px;
+}
+.imagen-top-caption{
+	width: 1000px;
+	height: 150px;
+	margin: 0 auto;
+	position:absolute;
+	bottom: 0px;
+	left: 0px; right: 0px;
+	background-image: url(../images/bg_turquesa.png);
+	background-repeat:repeat;
+	box-sizing:border-box;
+	padding-top: 35px;
+}
+.imagen-top-caption h3{
+	margin: 0px;
+}
+.imagen-top-caption h3 p{
+	font-family: Montserrat, sans-serif;
+	color: white;
+	font-size: 28px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 0px;	
+}
+.imagen-top-caption p{
+	font-family: Montserrat, sans-serif;
+	color: white;
+	font-size: 22px;
+	font-weight: normal;
+	margin: 0px;
+	margin-top: 15px;	
+}
+
+#block-block-15{
+	border-bottom: 1px solid #B7B9BB;
+}
+#block-block-15 .submenu{
+}
+#block-block-15 .submenu ul{
+	margin: 0px; padding: 0px;
+}
+#block-block-15 .submenu li{
+	list-style: none;
+	display:inline-block;
+}
+#block-block-15 .submenu li a{
+	display: block;
+	font-family: Montserrat, sans-serif;
+	color: #404041;
+	font-size: 13px;
+	font-weight: normal;
+	letter-spacing: 0px;
+	text-transform:uppercase;
+	padding: 30px 8px;	
+	text-decoration: none;
+}
+#block-block-15 .submenu li a:hover{
+	color: #EEB91C;
+}
+#block-block-9{
+	float:right;
+}
+#block-block-9 .stLarge{
+	width: 25px !important; height: 25px !important;
+	margin-left: 8px;
+}
+#block-block-9 .stLarge:hover{
+	background-position:center;
+}
+.st_facebook_large span span{
+	background-image: url(../images/c_fb.png) !important;
+}
+.st_twitter_large span span{
+	background-image: url(../images/c_tw.png) !important;
+}
+.st_googleplus_large span span{
+	background-image: url(../images/c_gm.png) !important;
+}
+.st_sharethis_large span span{
+	background-image: url(../images/c_more.png) !important;
+}
+
+h1.title{
+	font-family: Montserrat, sans-serif;
+	color: #404041;
+	font-size: 28px;
+	font-weight: normal;
+	text-transform:uppercase;	
+}
+.node-type-page h2{
+	color: #58595B;
+}
+.main-content .content p{
+	font-family: Roboto, sans-serif;
+	color: #404041;
+	font-size: 15px;
+	font-weight: 400;	
+}
+
+
+.columnas-body{
+	overflow:hidden;
+	padding-bottom: 30px;
+}
+.columnas-body .col-texto{
+	width: 460px;
+	float:left;
+}
+.columnas-body .col-texto.col-right{
+	width: 440px;
+	float:right;
+}
+.columnas-body .col-texto.col-right ul{
+	padding: 0px; padding-left: 20px;
+}
+.columnas-body .col-texto.col-right ul li{
+	color: #009DAD; font-size: 25px;
+}
+
+#block-block-10{
+	padding: 30px 0px 40px 0px;
+}
+h2.amarillo{
+	color: #EEB91C;
+	margin-bottom: 55px;
+}
+.columnas-mision-vision{
+	font-family: Roboto, sans-serif;
+	color: #404041;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 20px;	
+}
+.columnas-mision-vision strong{
+	text-transform: uppercase;
+	color: #58595B;
+	font-family: Montserrat, sans-serif;
+	font-size: 18px;
+	font-weight: 400;	
+}
+.columnas-mision-vision .col-1-2{
+	float:left;
+	width: 460px;
+}
+.columnas-mision-vision .col-right{
+	float:right;
+}
+
+#block-block-12{
+	padding: 50px 0px;
+	border-bottom: 1px solid #D9DBDC;
+}
+
+.inno-pioneros .inno-pioneros-exito-texto{
+	width: 450px;
+	float:left;	
+}
+.inno-pioneros .inno-pioneros-exito-texto p{
+	font-family: Roboto, sans-serif;
+	color: #404041;
+	font-size: 17px;
+	font-weight: 300;
+	margin-top: 0px;	
+}
+.inno-pioneros .inno-pioneros-exito-texto h3{
+	color: #404041;
+	text-transform: uppercase;
+	font-family: Montserrat, sans-serif;
+	font-size: 23px;
+	font-weight:400;
+	margin-bottom: 10px;		
+}
+.inno-pioneros .inno-pioneros-imagen{
+	float:right;
+}
+
+#block-block-13{
+	padding: 20px 0px 60px 0px;
+}
+
+#block-block-13 h2.turquesa{
+	color: #009DAD;
+	font-weight: 400;
+}
+
+.distribuidores-content{
+	position:relative;
+}
+.distribuidores-content a{
+	display:block;
+	position:absolute;
+	width: 12px; height: 16px;
+	font-family: Roboto, sans-serif;
+	color: #FFF;
+	font-size: 17px;	
+}
+.distribuidores-content a.costarica{
+	top: 234px;
+	left: 435px;
+}
+.distribuidores-content a.nicaragua{
+	top: 214px;
+	left: 424px;	
+}
+.distribuidores-content a.panama{
+	top: 248px;
+	left: 456px;	
+}
+.distribuidores-content a.salvador{
+	top: 203px;
+	left: 394px;	
+}
+.distribuidores-content a.honduras{
+	top: 195px;
+	left: 410px;		
+}
+.distribuidores-content a.guatemala{
+	top: 190px;
+	left: 379px;	
+}
+
+/*** TOOLTOP ***/
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-bottom: 5px;
+	margin-left: -65px;
+	padding: 7px;
+	width: 120px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:    3px;
+	border-radius:         3px;
+	background-color: #000;
+	background-color: hsla(0, 0%, 20%, 0.9);
+	color: #fff;
+	content: attr(data-tooltip);
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.2;
+	transition: all 0.3s ease 0s;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	width: 0;
+	border-top: 5px solid #000;
+	border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	content: " ";
+	font-size: 0;
+	line-height: 0;
+	transition: all 0.3s ease 0s;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+	visibility: visible;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+}
+
+
+
+#block-block-14{
+	background-color: #EFB81C;
+	padding: 8px 0px 12px 0px;
+}
+
+.llamado-accion-puestos-amarillo .llamado-texto p{
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: #FFF;
+  float: left;
+}
+
+.llamado-accion-puestos-amarillo .llamado-boton a{
+  padding: 13px 23px;
+  border: 4px solid #FFF;
+  font-family: Montserrat, sans-serif;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  float: right;
+  margin-top: 21px;
+}
+/**/

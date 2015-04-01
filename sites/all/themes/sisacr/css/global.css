@@ -1040,9 +1040,20 @@ h2.amarillo{
 #block-views-tipos-de-productos-block{
 }
 
-#block-views-tipos-de-productos-block h2{
+#block-views-tipos-de-productos-block .view-header{
 	color: #FFF;
 	background-color: #E7AA22;
+	padding: 25px 0px;
+	margin-bottom: 50px; margin-top: 50px;
+}
+#block-views-tipos-de-productos-block .grid-1000{
+	max-width: 100% !important;
+}
+#block-views-tipos-de-productos-block .grid-1000 .view-content,
+#block-views-tipos-de-productos-block .grid-1000 .view-header h2{
+	max-width: 1000px !important;
+	margin: 0 auto;
+	overflow: hidden;	
 }
 .view-tipos-de-productos{
 }
@@ -1053,6 +1064,19 @@ h2.amarillo{
 	margin-right: 26px;
 	margin-bottom: 50px;
 }
+.view-tipos-de-productos .views-row .views-field-field-image{
+	width: 316px;
+	height: 156px;
+	background-image: url('../images/marco_productos.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.view-tipos-de-productos .views-row .views-field-field-image .field-content img{
+	position:relative;
+	z-index: -1;
+}
+
 .view-tipos-de-productos .views-row.views-row-3,
 .view-tipos-de-productos .views-row.views-row-6,
 .view-tipos-de-productos .views-row.views-row-9,

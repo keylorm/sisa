@@ -3,7 +3,7 @@ jQuery( document ).ready(function() {
 	jQuery(".youtube-popup").colorbox({iframe:true, innerWidth:640, innerHeight:390});
 	jQuery(".tabla-comp-quimica").colorbox();
 	
-	jQuery(".submenu ul").append('<li><span><span><a href="#block-views-productos-block-1">Especiales</a></span></span></li>');
+	jQuery(".page-node-9 .submenu ul").append('<li><span><span><a href="#block-views-productos-block-1" class="scroll">Especiales</a></span></span></li>');
 	
 	
 	/* TABS */
@@ -13,15 +13,26 @@ jQuery( document ).ready(function() {
         var currentAttrValue = jQuery(this).attr('href');
         // Show/Hide Tabs
 		jQuery('#block-views-productos-block-2 .view-productos .views-row').hide();
-		console.log(jQuery('#block-views-productos-block-2 .view-productos .views-row').find(currentAttrValue));
-        jQuery('#block-views-productos-block-2 .view-productos .views-row').find(currentAttrValue).fadeIn(400);
+        jQuery('#block-views-productos-block-2 .view-productos .views-row'+currentAttrValue).fadeIn(400);
  
         // Change/remove current tab to active
-        //jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
- 
-        
+        jQuery(this).parent('div').parent('div').parent('li').addClass('active').siblings().removeClass('active'); 
     });	
+	/****************************/
 	
+	<!--Scroll-->
+	jQuery('a.scroll[href^="#"]').live('click', function(e) {
+		e.preventDefault();
+
+		var target = this.hash,
+		$target = jQuery(target);
+
+		jQuery('html, body').stop().animate({
+			'scrollTop': $target.offset().top
+		}, 900, 'swing', function() {
+			window.location.hash = target;
+		});
+	});	
 	
 });
 

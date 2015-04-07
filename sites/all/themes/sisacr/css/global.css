@@ -1020,13 +1020,16 @@ h2.amarillo{
 
 
 /*METALES*/
-.page-node-8 h1{
+h1#page-title{
 	line-height: 70px;
 	padding-left: 70px;
-	background-image: url(../images/titulo_metales.png);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #58595B;
+	font-weight: normal;	
+}
+.page-node-8 h1{
+	background-image: url(../images/titulo_metales.png);
 }
 
 .page-node-8 .marcas{
@@ -1054,15 +1057,27 @@ h2.amarillo{
 #block-views-tipos-de-productos-block{
 }
 
+.page-node-24 .view-tipos-de-productos .view-header,
 #block-views-tipos-de-productos-block .view-header{
 	color: #FFF;
 	background-color: #E7AA22;
 	padding: 25px 0px;
 	margin-bottom: 50px; margin-top: 50px;
 }
+.page-node-24 .view-tipos-de-productos .view-header{
+	background:none;
+	background-image: url('../images/bg_titulo_productos.jpg');
+	background-repeat:repeat-x;
+	background-position: center;
+}
+
+.page-node-24 .view-tipos-de-productos.grid-1000,
 #block-views-tipos-de-productos-block .grid-1000{
 	max-width: 100% !important;
 }
+
+.page-node-24 .view-tipos-de-productos.grid-1000 .view-content,
+.page-node-24 .view-tipos-de-productos.grid-1000 .view-header h2,
 #block-views-tipos-de-productos-block .grid-1000 .view-content,
 #block-views-tipos-de-productos-block .grid-1000 .view-header h2{
 	max-width: 1000px !important;
@@ -1438,3 +1453,120 @@ h2.amarillo{
 #block-views-productos-block-2 .view-productos .views-row .producto-titulo h3 a{
 	color: #414141;
 }
+
+
+/* IMPRECION DIGITAL */
+
+.not-front .flex-caption{
+	width: 1000px;
+	height: 558px;
+	margin: 0 auto;
+	position:absolute;
+	top: 0px;
+	right: 0px; left: 0px;
+	z-index: 999;
+}
+.not-front .flex-caption .caption-impresion{
+	width: 400px;
+	position:absolute;
+	top: 30px;
+}
+.not-front .flex-caption .caption-impresion-titulo-slide{
+	width: 655px;
+	height: 145px;
+	margin: 0 auto;
+	position:absolute;
+	right: 0px; left: 0px;
+	bottom: 0px;	
+	background-image: url('../images/bg_amarillo.png');
+	background-repeat: repeat;
+}
+.not-front .flex-caption .caption-impresion-titulo-slide h2{
+	width: 100%;
+	text-align:center;
+	color: #FFF;
+	line-height: 100px;
+}
+.not-front .flex-caption .cap-content h3{
+	margin-bottom: 0px;
+}
+.not-front .flex-caption .cap-content h3 p{
+	font-family: Montserrat, sans-serif;
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: white;
+	margin-bottom: 0px;	
+}
+.not-front .flex-caption .cap-content p{
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;	
+}
+.not-front .flex-caption .caption-boton a{
+	display: block;
+	width: 175px;
+	/*margin: 0 auto;*/
+	margin-top: 20px;
+	padding: 13px 0px;
+	border: 3px solid white;
+	font-family: Montserrat, sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	text-align:center;
+	background: rgba(0,0,0,0.4);
+	-webkit-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+.not-front .flex-control-nav{
+	display:none;
+}
+.not-front .flex-direction-nav li a{
+	width: 70px;
+	height: 70px;
+	overflow:hidden; 
+	top: 47%;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.not-front .flex-direction-nav li a:before{
+  content: '';
+  margin-left: 100px;
+  height: 70px;	
+}
+
+.not-front .flex-direction-nav a.flex-prev{
+	background-image: url('../images/in_prev.png');
+}
+.not-front .flex-direction-nav a.flex-next{
+	background-image: url('../images/in_next.png');
+}
+
+.page-node-24 h1{
+	background-image: url(../images/titulo_impresion.png);
+}
+
+.page-node-24 .main h4{
+  color: #E7AA22;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0px 0px 15px 0px;
+}
+.page-node-24 .main strong{
+	text-transform: uppercase;
+}
+
+.page-node-24 .main ul li {
+  color: #EFB81C;
+  font-size: 25px;
+}
+
+/*********************/

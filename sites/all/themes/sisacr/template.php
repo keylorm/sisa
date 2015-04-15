@@ -136,3 +136,10 @@ function sisacr_menu_link(array $variables) {
 //dvm($variables['element']);
   return theme_menu_link($variables);
 }
+
+function sisacr_preprocess_page(&$vars) {
+    // - page--example.tpl.php  
+  if (isset($vars['node'])) {
+    $vars['theme_hook_suggestion'] = 'page__'.$vars['node']->type; //
+  }
+}

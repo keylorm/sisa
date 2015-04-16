@@ -1022,13 +1022,14 @@ h2.amarillo{
 /*METALES*/
 h1#page-title{
 	line-height: 70px;
-	padding-left: 70px;
+	/*padding-left: 70px;*/
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #58595B;
 	font-weight: normal;	
 }
 .page-node-8 h1{
+	padding-left: 70px;
 	background-image: url(../images/titulo_metales.png);
 }
 
@@ -1058,7 +1059,8 @@ h1#page-title{
 }
 
 .page-node-24 .view-tipos-de-productos .view-header,
-#block-views-tipos-de-productos-block .view-header{
+#block-views-tipos-de-productos-block .view-header,
+#block-views-tipos-de-productos-block-2 .view-header{
 	color: #FFF;
 	background-color: #E7AA22;
 	padding: 25px 0px;
@@ -1072,26 +1074,27 @@ h1#page-title{
 }
 
 .page-node-24 .view-tipos-de-productos.grid-1000,
-#block-views-tipos-de-productos-block .grid-1000{
+#block-views-tipos-de-productos-block .grid-1000,
+#block-views-tipos-de-productos-block-2 .grid-1000{
 	max-width: 100% !important;
 }
 
 .page-node-24 .view-tipos-de-productos.grid-1000 .view-content,
 .page-node-24 .view-tipos-de-productos.grid-1000 .view-header h2,
 #block-views-tipos-de-productos-block .grid-1000 .view-content,
-#block-views-tipos-de-productos-block .grid-1000 .view-header h2{
+#block-views-tipos-de-productos-block .grid-1000 .view-header h2,
+#block-views-tipos-de-productos-block-2 .grid-1000 .view-content,
+#block-views-tipos-de-productos-block-2 .grid-1000 .view-header h2{
 	max-width: 1000px !important;
 	margin: 0 auto;
 	overflow: hidden;	
-}
-.view-tipos-de-productos{
 }
 
 .view-tipos-de-productos .views-row{
 	width: 316px;
 	float:left;
 	margin-right: 26px;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 .view-tipos-de-productos .views-row .views-field-field-image{
 	width: 316px;
@@ -1171,16 +1174,27 @@ h1#page-title{
   margin-top: -58px;	
 }
 
-#block-block-17{
+#block-block-17,
+#block-block-19{
 	background-color: #E7AA22;
 	padding: 0px;
 }
-#block-block-17 .llamado-accion-puestos-amarillo .llamado-boton a{
+#block-block-19{
+	background-image: url('../images/bg_llamado_cotizar.jpg');
+	background-position: center;
+	height: 103px;
+}
+#block-block-17 .llamado-accion-puestos-amarillo .llamado-boton a,
+#block-block-19 .llamado-accion-puestos-amarillo .llamado-boton a{
 	padding: 12px 40px 12px 55px;
 	margin-top: 28px;
 	font-size: 18px;
 }
-#block-block-17 .llamado-accion-puestos-amarillo .llamado-texto p{
+#block-block-19 .llamado-accion-puestos-amarillo .llamado-boton a{
+	padding: 12px 40px 12px 30px;
+}
+#block-block-17 .llamado-accion-puestos-amarillo .llamado-texto p,
+#block-block-19 .llamado-accion-puestos-amarillo .llamado-texto p{
 	margin: 22px 0px;
 }
 /**/
@@ -1550,6 +1564,7 @@ h1#page-title{
 }
 
 .page-node-24 h1{
+	padding-left: 70px;
 	background-image: url(../images/titulo_impresion.png);
 }
 
@@ -1572,5 +1587,89 @@ h1#page-title{
 #block-node-fields-block-1{
 	overflow: hidden;
 }
+.page-node-24 .view-tipos-de-productos .view-header{
+	margin-top: 20px;
+}
+.page-node-24 .main .marcas{
+	display: none;
+}
+.field-marcas{
+	border-top: 1px solid #B7B9BB;
+	padding-top: 10px;
+}
+.field-marcas .content{
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;	
+}
+
+.field-marcas .marcas .listado-marcas{
+	margin-top: 0px;
+}
+.field-marcas .marcas h3{
+	color: #E7452E;
+}
+#block-block-21{
+	height: 343px;
+	background-image: url('../images/bg_servicio_tecnico.jpg');
+	background-repeat: repeat-x;
+	background-position: center;
+	box-sizing:border-box;
+	padding: 30px 0px;
+}
+#block-block-21 h3{
+	text-align:center;
+	font-family: Montserrat, sans-serif;
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #FFF;
+	margin-bottom: 40px;
+}
+.impresion-servicio-imagen{
+	width: 465px;
+	float:left;
+}
+.impresion-servicio-texto{
+	width: 465px;
+	float:right;
+	font-family: Roboto, sans-serif;
+	font-size: 19px;
+	font-weight: 500;
+	color: #FFF;
+	line-height:23px;	
+}
+.impresion-servicio-texto p{
+	margin-top: 0px;
+}
+.impresion-servicio-boton{
+	margin-top: 75px;
+}
+.impresion-servicio-boton a{
+	padding: 8px 14px;
+	border: 3px solid white;
+	font-family: Montserrat, sans-serif;
+	color: white;
+	font-size: 15px;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;	
+}
+
+.page-node-24 .view-id-videos h2{
+	color: #1B75BB;
+}
+.page-node-24 .view-id-videos h2.linea:after{
+	background-color: #1B75BB;
+}
+
+
+/* BARANDAS DE ACERO INOXIDABLE */
+
+.page-node-46 .view-tipos-de-productos .views-row{
+  margin-bottom: 15px;
+  min-height: 225px;
+}
+
 
 /*********************/

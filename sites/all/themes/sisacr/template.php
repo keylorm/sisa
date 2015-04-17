@@ -143,3 +143,4 @@ function sisacr_preprocess_page(&$vars) {
     $vars['theme_hook_suggestion'] = 'page__'.$vars['node']->type; //
   }
 }
+

@@ -3,7 +3,9 @@ jQuery( document ).ready(function() {
 	jQuery(".youtube-popup").colorbox({iframe:true, innerWidth:640, innerHeight:390});
 	jQuery(".tabla-comp-quimica").colorbox({transition:"fade"});
 	jQuery(".proyecto-popup").colorbox({transition:"fade"});
-	
+	jQuery(".pasamanos-popup").colorbox({transition:"fade"});
+
+
 	jQuery(".page-node-9 .submenu ul").append('<li><span><span><a href="#block-views-productos-block-1" class="scroll">Especiales</a></span></span></li>');
 	
 	

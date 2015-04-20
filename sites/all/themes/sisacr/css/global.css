@@ -24,26 +24,33 @@ body .header{
 .header .menu li{
 	display: inline-block;
 	padding: 0px; margin: 0px;
+	max-width: 118px;
+	
+	/**/
 	float:left;
+	
 }
 .header .menu li a{
-	min-height: 55px;
-	margin-right: 0px;
-	padding: 10px 8px;
-	padding-bottom: 0px;
-	border: 2px solid white;
+	
+	/*margin-right: 0px;*/
+	padding: 10px 5px;
+	/*padding-bottom: 0px;*/
+	
 	-webkit-transition: all 550ms ease;
 	transition: all 550ms ease;
 	font-family: Montserrat, sans-serif;
 	color: #404041;
 	font-size: 11px;
-	line-height: 16px;
+	line-height: 14px;
 	font-weight: 400;
 	text-transform: uppercase;
 	text-decoration: none;
-	max-width: 100px;
+	border: 2px solid white;
+	min-height: 35px;
+	word-wrap: break-word;
+	
 }
-.header .menu li a:hover {
+.header .menu li:hover a {
   border: 2px solid #099dad;
 }
 .front .main-content{
@@ -528,18 +535,21 @@ h2{
 .view-blog .view-content{
 }
 .view-blog .view-content .views-row,
-.view-proyectos-de-referencia .views-row{
+.view-proyectos-de-referencia .views-row,
+.view-puestos-disponibles .views-row{
 	display: inline-block;
 	float:left;
 	width: 300px;
 	margin-right: 50px;
 }
 .view-blog .view-content .views-row.views-row-last,
-.view-proyectos-de-referencia .views-row.views-row-last{
+.view-proyectos-de-referencia .views-row.views-row-last,
+.view-puestos-disponibles .views-row:nth-child(3n){
 	margin-right: 0px;
 }
 .view-blog .view-content .views-row .views-field-title a,
-.view-proyectos-de-referencia .views-row .proyecto-titulo{
+.view-proyectos-de-referencia .views-row .proyecto-titulo,
+.view-puestos-disponibles .views-row .views-field-title{
 	font-family: Montserrat, sans-serif;
 	text-transform: uppercase;
 	font-size: 17px;	
@@ -548,14 +558,16 @@ h2{
 	line-height: 60px;
 }
 .view-blog .view-content .views-row .views-field-body div,
-.view-proyectos-de-referencia .views-row .proyecto-cuerpo{
+.view-proyectos-de-referencia .views-row .proyecto-cuerpo,
+.view-puestos-disponibles .views-row .views-field-body{
 	font-family: Roboto, sans-serif;
 	font-size: 17px;
 	font-weight: 300;
 	color: #404041;	
 	margin-bottom: 40px;
 }
-.view-proyectos-de-referencia .views-row .proyecto-cuerpo p{
+.view-proyectos-de-referencia .views-row .proyecto-cuerpo p,
+.view-puestos-disponibles .views-row .views-field-body p{
 	margin-top: 5px;
 }
 .view-blog .view-content .views-row .views-field-path a{
@@ -2135,12 +2147,29 @@ form.comment-form .form-actions input{
 
 
 /* CONTACTO */
-
+.form-actions{
+	position:relative;
+}
+.form-actions .ajax-progress{
+	position:absolute;
+	right: 0px; top: -20px;
+	z-index: 999;
+}
 .page-node-36{
 }
 .main-content{
 	padding-bottom: 40px;
 }
+#block-views-puestos-disponibles-block{
+	clear:both;
+	overflow:hidden;	
+}
+#webform-ajax-wrapper-43,
+#webform-ajax-wrapper-43{
+	clear:both;
+	overflow:hidden;
+}
+
 #webform-ajax-wrapper-36 .webform-component--columna-izq,
 #webform-ajax-wrapper-43 .webform-component--columna-izq{
 	width: 45%;
@@ -2300,5 +2329,55 @@ form.comment-form .form-actions input{
 }
 .page-node-37 #block-webform-client-block-36{
 	margin-top: 100px;
+}
+
+/* TRABAJE CON NOSOTROS */
+.webform-component--columna-dere--boton-agregar-cv + div{
+	clear:both;
+	overflow:hidden;
+}
+.webform-component--columna-dere--agregar-cv{
+	color: #404041;
+	font-family: Roboto, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	display:none;	
+}
+.mostrar-subir-cv{
+	display:block;
+	font-family: Montserrat, sans-serif;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: normal;
+	text-decoration:none;
+	color: #009DAD;	
+	border: 4px solid #009DAD;
+	width: 175px;
+	height: 47px;
+	line-height: 46px;
+	text-align:center;
+	float:left;
+}
+
+.page-node-38 #webform-ajax-wrapper-43 .form-actions{
+	margin: 0px;
+	margin-top: -106px;
+	margin-right: 10px;
+	
+}
+.page-node-38 #webform-ajax-wrapper-43 .webform-component--columna-izq,
+.page-node-38 #webform-ajax-wrapper-43 .webform-component--columna-dere{
+	border-bottom: 1px solid #D0D2D3;
+}
+.page-node-38 #webform-ajax-wrapper-43 .webform-component--columna-izq{
+	padding-bottom: 20px;
+}
+.page-node-38 #webform-ajax-wrapper-43 .webform-component--columna-dere{
+	padding-bottom: 34px;
+}
+.page-node-38 .ajax-progress{
+	position:absolute;
+	right: 10px; bottom: 20px;
+	z-index: 999;
 }
 /*********************/

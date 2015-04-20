@@ -35,5 +35,18 @@ jQuery( document ).ready(function() {
 		});
 	});	
 	
+	
+	/* CV */
+	jQuery(".mostrar-subir-cv").live('click', function(e) {
+		e.preventDefault();
+		
+		jQuery(".webform-component--columna-dere--agregar-cv").css({display: 'block'});
+		jQuery("#webform-ajax-wrapper-43 .form-actions").css({'margin-top': '-204px'});
+		
+		
+	});	
+	
+	
+	
 });
 

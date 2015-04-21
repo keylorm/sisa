@@ -401,14 +401,12 @@ body .header{
 .pane-block-7,
 #block-block-11,
 #block-block-18,
-#block-block-25{
+#block-block-25,
+#block-block-27{
 	background-color: #009DAD;
 	padding: 10px 0px;
 }
-.pane-block-7 .llamado-texto p,
-#block-block-11 .llamado-texto p,
-#block-block-18 .llamado-texto p,
-#block-block-25 .llamado-texto p{
+.llamado-texto p{
 	font-family: Montserrat, sans-serif;
 	text-transform: uppercase;
 	font-size: 28px;
@@ -421,14 +419,12 @@ body .header{
 }
 #block-block-11 .llamado-texto p,
 #block-block-18 .llamado-texto p,
-#block-block-25 .llamado-texto p{
+#block-block-25 .llamado-texto p,
+#block-block-27 .llamado-texto p{
 	margin-bottom: 10px; margin-top: 10px;
 }
 
-.pane-block-7 .llamado-boton a,
-#block-block-11 .llamado-boton a,
-#block-block-18 .llamado-boton a,
-#block-block-25 .llamado-boton a{
+.llamado-boton a{
 	padding: 13px 23px;
 	border: 4px solid #FFF;
 	font-family: Montserrat, sans-serif;
@@ -1303,11 +1299,10 @@ h1#page-title{
 	color: #009DAD;
 }
 #block-views-productos-block p,
-#block-views-productos-block-2 p,
 #block-views-productos-block span,
-#block-views-productos-block-2 span,
-#block-views-productos-block-3 p,
-#block-views-productos-block-3 span{
+
+.block-tab-body p,
+.block-tab-body span{
 	color: #404041;
 	font-family: Roboto, sans-serif;
 	font-size: 14px;
@@ -1315,12 +1310,11 @@ h1#page-title{
 	line-height: 20px;	
 }
 #block-views-productos-block .columna-der p,
-#block-views-productos-block-2 .columna-der p{
+.block-tab-body .columna-der p{
 	padding-bottom: 20px;
 }
 #block-views-productos-block h4,
-#block-views-productos-block-2 h4,
-#block-views-productos-block-3 h4{
+.block-tab-body h4{
 	color: #E7AA22;
 	font-family: Roboto, sans-serif;
 	font-size: 17px;
@@ -1329,8 +1323,8 @@ h1#page-title{
 }
 
 #block-views-productos-block a.producto-cotizar-boton,
-#block-views-productos-block-2 a.producto-cotizar-boton{
-	display:block;
+.block-tab-body a.producto-cotizar-boton{
+  display:block;
   padding: 10px 40px;
   border: 4px solid #E6AA22;
   font-family: Montserrat, sans-serif;
@@ -1346,13 +1340,18 @@ h1#page-title{
 	margin-bottom: 0px;
 }
 #block-views-productos-block ul,
-#block-views-productos-block-2 ul{
-	margin: 0px; padding: 0px; padding-left: 20px;
+.block-tab-body ul{
+	list-style: none; margin: 0px; padding: 0px;
 }
 #block-views-productos-block ul li,
-#block-views-productos-block-2 ul li{
-	color: #009DAD;
-	font-size:18px;
+.block-tab-body ul li{
+	padding-left: 20px;
+	background-image: url('../images/ulcircle.png');
+	background-repeat:no-repeat;
+	background-position: left center;
+}
+.block-tab-body ul li{
+	background-image: url('../images/ulcirclen.png');
 }
 
 .view-submenu-detalle-productos{
@@ -1428,16 +1427,16 @@ h1#page-title{
 	float:right;
 	margin-top: -2px;	
 }
-.producto-detalle-der{
-	border-bottom: 1px solid #A6A8AB;
+.producto-cotizar{
+	width: 100%;
+	clear:both;
+	border-top: 1px solid #A6A8AB;
 }
 
-#block-views-productos-block-1,
-#block-views-productos-block-4{
+.block-tab-top{
 	border-bottom: 1px solid #B7B9BB;
 }
-#block-views-productos-block-1 .view-productos,
-#block-views-productos-block-4 .view-productos{
+.block-tab-top .view-productos{
 	width: 1000px;
 	margin: 0 auto;
 	padding-bottom: 40px;
@@ -1445,34 +1444,30 @@ h1#page-title{
 	z-index: 9999;
 }
 
-#block-views-productos-block-1 h2,
-#block-views-productos-block-4 h2{
+.block-tab-top h2{
 	font-size: 21px;
 	margin-top: 30px;
 	margin-bottom: 0px;
 }
-#block-views-productos-block-1 .view-content h3,
-#block-views-productos-block-4 .view-content h3{
+.block-tab-top .view-content h3{
   font-family: Roboto, sans-serif;
   color: #404041;
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
-  float:left;	
+  float:left;
+  margin-right: 20px;
 }
-#block-views-productos-block-1 .view-content ul,
-#block-views-productos-block-4 .view-content ul{
+.block-tab-top .view-content ul{
 	margin: 0px; padding: 0px; list-style: none;
 }
-#block-views-productos-block-1 .view-content ul li,
-#block-views-productos-block-4 .view-content ul li{
+.block-tab-top .view-content ul li{
 	float:left;
 }
-#block-views-productos-block-4 .view-content ul li:first-child{
+.block-tab-top .view-content ul li:first-child{
 	margin-left: 0px;
 }
-#block-views-productos-block-1 .view-content ul li a,
-#block-views-productos-block-4 .view-content ul li a{
+.block-tab-top .view-content ul li a{
 	display:block;
 	color: #404041;
 	text-decoration:none;
@@ -1484,9 +1479,7 @@ h1#page-title{
 	position:relative;
 	text-align:center;
 }
-#block-views-productos-block-1 .view-content ul li a .flechad,
-#block-views-productos-block-4 .view-content ul li a .flechad,
-#block-views-productos-block-5 .view-content ul li a .flechad{
+.block-tab-top .view-content ul li a .flechad{
 	display:none;
 	width: 100%;
 	height: 5px;
@@ -1496,41 +1489,29 @@ h1#page-title{
 	position:absolute;
 	bottom: -5px;
 }
-#block-views-productos-block-1 .view-content ul li a:hover,
-#block-views-productos-block-1 .view-content ul li.active a,
-#block-views-productos-block-4 .view-content ul li a:hover,
-#block-views-productos-block-4 .view-content ul li.active a,
-#block-views-productos-block-5 .view-content ul li a:hover,
-#block-views-productos-block-5 .view-content ul li.active a{
+.block-tab-top .view-content ul li a:hover,
+.block-tab-top .view-content ul li.active a{
 	color: #EEB91C;
 	font-weight: bold;	
 }
-#block-views-productos-block-1 .view-content ul li a:hover .flechad,
-#block-views-productos-block-1 .view-content ul li.active a .flechad,
-#block-views-productos-block-4 .view-content ul li a:hover .flechad,
-#block-views-productos-block-4 .view-content ul li.active a .flechad,
-#block-views-productos-block-5 .view-content ul li a:hover .flechad,
-#block-views-productos-block-5 .view-content ul li.active a .flechad{
+.block-tab-top .view-content ul li a:hover .flechad,
+.block-tab-top .view-content ul li.active a .flechad{
 	display: block;
 }
 
-#block-views-productos-block-1,
-#block-views-productos-block-2{
+.block-tab-top,
+.block-tab-body{
 	background-color: #EDEDEE;
 }
-#block-views-productos-block-2 .view-productos .views-row,
-#block-views-productos-block-3 .view-productos .views-row{
+.block-tab-body .view-productos .views-row{
 	display: none;
 	padding-bottom: 100px;
 }
-#block-views-productos-block-2 .view-productos .views-row.active,
-#block-views-productos-block-2 .view-productos .views-row.views-row-1,
-#block-views-productos-block-3 .view-productos .views-row.active,
-#block-views-productos-block-3 .view-productos .views-row.views-row-1{
+.block-tab-body .views-row.active,
+.block-tab-body .view-productos .views-row.views-row-1{
 	display:block;
 }
-#block-views-productos-block-2 .view-productos .views-row .producto-titulo h3 a,
-#block-views-productos-block-3 .view-productos .views-row .producto-titulo h3 a{
+.block-tab-body .view-productos .views-row .producto-titulo h3 a{
 	color: #414141;
 }
 
@@ -2427,10 +2408,10 @@ form.comment-form .form-actions input{
 .node-pagina-sistemas-de-barandas .pasamanos{
 	display:none;
 }
-#block-views-productos-block-3,
+/*#block-views-productos-block-3,
 #block-views-productos-block-4{
 	background-color: #EDEDEE;
-}
+}*/
 
 #block-node-fields-block-2{
 	padding: 30px 0px 50px;
@@ -2540,10 +2521,61 @@ form.comment-form .form-actions input{
 	color: #E7452E;
 }
 
-#block-views-productos-block-5{
-	background-color: #EDEDEE;
+.page-node-56 .block-tab-top h2{
+	color: #58595B;
+	font-size: 28px;
 }
-#block-views-productos-block-6{
-	background-color: #EDEDEE;
+.page-node-56 .producto-cotizar{
+	float: left;
+	margin-top: 10px;
 }
+.page-node-56 .block-tab-body .view-productos .views-row{
+	padding-bottom: 50px;
+	
+}
+#block-block-26{
+	padding: 40px 0px 50px;
+}
+#block-block-26 .col{
+	width: 465px;
+}
+#block-block-26 .col-1{
+	float:left;
+}
+#block-block-26 .col-1 h3{
+  color: #404041;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 10px;	
+}
+#block-block-26 .col-1 p{
+  font-family: Roboto, sans-serif;
+  color: #404041;
+  font-size: 17px;
+  font-weight: 300;
+  margin-top: 0px;	
+}
+#block-block-26 .col-1 .soporte-ver-mas a{
+  display: block;
+  padding: 10px 40px;
+  border: 4px solid #E6AA22;
+  font-family: Montserrat, sans-serif;
+  color: #E6AA22;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  float: left;
+  margin-top: 10px;	
+}
+
+
+
+#block-block-26 .col-2{
+	float:right;
+}
+
+
 /*********************/

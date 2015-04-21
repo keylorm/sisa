@@ -10,13 +10,13 @@ jQuery( document ).ready(function() {
 	
 	
 	/* TABS */
-	jQuery(".block-views .view-content ul li:first-child").addClass('active');
-	jQuery('.block-views .view-content ul li a').click(function(e)  {
+	jQuery(".block-tab-top .view-content ul li:first-child").addClass('active');
+	jQuery('.block-tab-top .view-content ul li a').click(function(e)  {
 		e.preventDefault();
         var currentAttrValue = jQuery(this).attr('href');
         // Show/Hide Tabs
-		jQuery('.view-productos .views-row').hide();
-        jQuery('.view-productos .views-row'+currentAttrValue).fadeIn(400);
+		jQuery('.block-tab-body .view-productos .views-row').hide();
+        jQuery('.block-tab-body .view-productos .views-row'+currentAttrValue).fadeIn(400);
  
         // Change/remove current tab to active
         jQuery(this).parent('div').parent('div').parent('li').addClass('active').siblings().removeClass('active'); 

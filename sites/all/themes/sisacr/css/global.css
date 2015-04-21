@@ -2427,5 +2427,118 @@ form.comment-form .form-actions input{
 	background-color: #EDEDEE;
 }
 
+#block-node-fields-block-2{
+	padding: 30px 0px 50px;
+}
+#block-node-fields-block-2 .content{
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;	
+}
 
+#block-node-fields-block-2 .content .pasamanos h3{
+	color: #009DAD;
+	font-family: Montserrat, sans-serif;
+	text-transform: uppercase;
+	font-size: 21px;
+	font-weight: normal;
+	margin-bottom: 40px;	
+}
+
+
+#block-node-fields-block-2 .content .listado-pasamanos{
+	clear:both;
+	overflow: hidden;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #A6A8AB;
+	margin-bottom: 20px;
+}
+
+#block-node-fields-block-2 .content .listado-pasamanos .logo-pasamano{
+	width: 130px;
+	display: block;
+	float:left;
+	margin-right: 86px;
+}
+#block-node-fields-block-2 .content .listado-pasamanos .logo-pasamano .logo-pasamanos-imagen{
+	height: 130px;
+}
+#block-node-fields-block-2 .content .listado-pasamanos .logo-pasamano:hover .logo-pasamanos-imagen{
+	background-image: url('../images/hover_pasamanos.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	position:relative;
+}
+#block-node-fields-block-2 .content .listado-pasamanos .logo-pasamano:hover .logo-pasamanos-imagen a{
+	display:block;
+	width: 130px;
+	height: 130px;
+}
+#block-node-fields-block-2 .content .listado-pasamanos .logo-pasamano:hover .logo-pasamanos-imagen a img{
+	position:relative;
+	z-index: -5;
+}
+#block-node-fields-block-2 .content .listado-pasamanos .logo-pasamano-last{
+	margin-right: 0px;
+}
+#block-node-fields-block-2 .content .listado-pasamanos .logo-pasamano .logo-pasamanos-imagen{
+	margin-bottom: 30px;
+}
+#block-node-fields-block-2 .content .listado-pasamanos .logo-pasamano .logo-pasamanos-nombre p{
+	font-family: Roboto, sans-serif;
+	color: #404041;
+	font-size: 14px;
+	font-weight: 600;
+	text-align:center;
+	padding: 0px 4px;
+}
+
+.bulletn li{
+	color: #E7AA22;
+	font-size:16px;
+	line-height: 16px;
+}
+
+.pasamanos-cotizar a{
+  display: block;
+  padding: 10px 40px;
+  border: 4px solid #E6AA22;
+  font-family: Montserrat, sans-serif;
+  color: #E6AA22;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  float: right;
+  margin-top: 10px;	
+}
+
+.node-type-pagina-sistemas-de-barandas .field-name-field-image .colorbox{
+	display:block;
+	background-image: url('../images/icon_more.jpg');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	height: 240px;
+}
+.node-type-pagina-sistemas-de-barandas .field-name-field-image .colorbox img{
+	position:relative;
+	z-index: -5;	
+}
+
+/* REPUESTOS INDUSTRIALES */
+
+.page-node-56 h1 {
+  padding-left: 70px;
+  background-image: url(../images/titulo_repuestos.png);
+}
+.page-node-56 .columnas-body .col-texto.col-right ul li{
+	color: #E7452E;
+}
+
+#block-views-productos-block-5{
+	background-color: #EDEDEE;
+}
+#block-views-productos-block-6{
+	background-color: #EDEDEE;
+}
 /*********************/

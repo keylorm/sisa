@@ -1065,7 +1065,7 @@ h1#page-title{
 .page-node-8 .marcas{
 	/*margin-top: -150px;*/
 }
-.marcas h3{
+.field-name-field-label-para-bloque-marcas div{
   text-transform: uppercase;
   color: #404040;
   font-family: Roboto, sans-serif;
@@ -1640,9 +1640,9 @@ h1#page-title{
 .page-node-24 .main .marcas{
 	display: none;
 }
-.field-marcas{
+.page-node-24 .below-content .field-name-field-label-para-bloque-marcas{
 	border-top: 1px solid #B7B9BB;
-	padding-top: 10px;
+	padding-top: 15px;
 }
 .field-marcas .content{
   max-width: 1000px;
@@ -1651,11 +1651,20 @@ h1#page-title{
 }
 
 .field-marcas .marcas .listado-marcas{
-	margin-top: 0px;
+	margin-top: 10px;
 }
-.field-marcas .marcas h3{
+
+
+
+.page-node-24 .field-name-field-label-para-bloque-marcas div {
 	color: #E7452E;
+	width: 1000px;
+	margin: 0 auto;
 }
+.page-node-24 .main .field-name-field-label-para-bloque-marcas{
+	display: none;
+}
+
 #block-block-21{
 	height: 343px;
 	background-image: url('../images/bg_servicio_tecnico.jpg');

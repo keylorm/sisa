@@ -31,7 +31,7 @@ $imagen ="";
 	}
 } ?>
 <div class="marcas">
-	<h3>Representantes exclusivos de las marcas:</h3>
+	
 		<ul class="listado-marcas">
 		<?php print $imagen ?>
 	</ul>

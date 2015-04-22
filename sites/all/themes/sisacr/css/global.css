@@ -790,6 +790,7 @@ h2.amarillo{
 }
 #block-block-9{
 	float:right;
+	margin-top: 25px;
 }
 #block-block-9 .stLarge{
 	width: 25px !important; height: 25px !important;
@@ -1210,6 +1211,18 @@ h1#page-title{
 	font-size: 19px;
 	font-weight: 400;	
 }
+.productos-destacados-bloque .texto-somos-pioneros ul{
+	list-style:disc;
+	margin-left: 20px;
+}
+.productos-destacados-bloque .texto-somos-pioneros ul li{
+	padding-left: 0px;
+	background: none;
+	font-family: Roboto, sans-serif !important;
+	color: #FFF !important;
+	font-size: 19px !important;
+	font-weight: 400 !important;	
+}
 #block-block-16 .texto-somos-pioneros p a,
 .productos-destacados-bloque .texto-somos-pioneros a.somos-pioneros-ver-detalle{
 	display:block;
@@ -1222,7 +1235,7 @@ h1#page-title{
   text-decoration: none;
   text-transform: uppercase;
   float: right;
-  margin-top: -58px;	
+  margin-top: -30px;	
 }
 
 .llamado-amarillo{
@@ -2743,4 +2756,81 @@ form.comment-form .form-actions input{
   float: right;
   margin-top: 10px;	
 }
+
+/* EQUIPO PARA SOLDAR */
+
+.page-node-62 .field-name-field-label-para-bloque-marcas{
+	padding-top: 20px;
+}
+.page-node-62 .node-pagina-productos .marcas,
+.page-node-62 .node-pagina-productos .field-name-field-label-para-bloque-marcas{
+	display: none;
+}
+.page-node-62  .marcas{
+	border-bottom: 1px solid #B7B9BB;
+	clear:both;
+	overflow:hidden;
+	padding-bottom: 30px;
+}
+.page-node-62 #block-node-fields-block-3{
+	padding-top: 0px;
+	border-top: 1px solid #B7B9BB;
+}
+
+.page-node-62 .main-content {
+  padding-bottom: 0px;
+}
+
+/* CORTE DE PLASMA */
+
+.page-node-63 .main-content{
+	border-bottom: 1px solid #B7B9BB;
+}
+
+/* POSICIONAMIENTO Y SOLDADURA */
+
+.page-node-64 .btn_catalogo{
+	border-top: 1px solid #B7B9BB;
+	padding-top: 15px;
+}
+.page-node-64 .main-content{
+	border-bottom: 1px solid #B7B9BB;
+}
+.descargar-catalogo{
+	font-family: Montserrat, sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: normal;
+	color: #009DAD;
+	text-decoration: none;
+	background-image: url('../images/flecha_a.png');
+	background-position: center right;
+	background-repeat: no-repeat;
+	padding-right: 20px;
+}
+
+/* WATER YET */
+.node-type-producto-destacado .field-type-image {
+  width: 465px;
+  float: left;
+}
+.node-type-producto-destacado .field-name-body {
+  width: 465px;
+  float: right;
+}
+
+.node-type-producto-destacado .field-name-field-label-para-bloque-marcas{
+	border-top: 1px solid #B7B9BB;
+	clear:both;
+	overflow:hidden;
+	width: 100%;
+	float:left;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+.node-type-producto-destacado .marcas ul{
+	margin-top: 0px;
+}
+
+
 /*********************/

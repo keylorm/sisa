@@ -50,7 +50,8 @@ body .header{
 	word-wrap: break-word;
 	
 }
-.header .menu li:hover a {
+.header .menu li:hover a,
+.header .menu li a.active{
   border: 2px solid #099dad;
 }
 .front .main-content{
@@ -510,6 +511,9 @@ body .header{
 	float:right;
 }
 
+.field-name-body h2{
+	color: #58595B;
+}
 /*ACTUALIDAD HOME*/
 h2{
 	font-family: Montserrat, sans-serif;
@@ -757,19 +761,20 @@ h2.amarillo{
 	margin-top: 15px;	
 }
 
-#block-block-15{
+.bloque-submenu{
 	border-bottom: 1px solid #B7B9BB;
 }
-#block-block-15 .submenu{
+.bloque-submenu .submenu{
 }
-#block-block-15 .submenu ul{
+.bloque-submenu .submenu ul{
 	margin: 0px; padding: 0px;
 }
-#block-block-15 .submenu li{
+.bloque-submenu .submenu li{
 	list-style: none;
 	display:inline-block;
+	margin: 0px; padding: 0px;
 }
-#block-block-15 .submenu li a{
+.bloque-submenu .submenu li a{
 	display: block;
 	font-family: Montserrat, sans-serif;
 	color: #404041;
@@ -780,7 +785,7 @@ h2.amarillo{
 	padding: 30px 8px;	
 	text-decoration: none;
 }
-#block-block-15 .submenu li a:hover{
+.bloque-submenu .submenu li a:hover{
 	color: #EEB91C;
 }
 #block-block-9{
@@ -813,7 +818,8 @@ h1.title{
 	font-weight: normal;
 	text-transform:uppercase;	
 }
-.node-type-page h2{
+.node-type-page h2,
+.section-baranda-detalle-title{
 	color: #58595B;
 }
 .main-content .content p{
@@ -1042,7 +1048,10 @@ h2.amarillo{
   float: right;
   margin-top: 21px;
 }
-
+#block-block-14 .llamado-accion-puestos-amarillo .llamado-boton a{
+	padding: 13px 23px;
+	margin-top: 12px;
+}
 
 
 /*METALES*/
@@ -1127,6 +1136,17 @@ h1#page-title{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
+	position:relative;
+}
+.view-tipos-de-productos .views-row .views-field-field-image .ver-mas-icono{
+	width: 34px;
+	height: 34px;	
+	background-image: url('../images/icon_more.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	position:absolute;
+	right: 0px;
+	bottom: 0px;
 }
 .view-tipos-de-productos .views-row .views-field-field-image .field-content img{
 	position:relative;
@@ -1214,7 +1234,7 @@ h1#page-title{
 	background-position: center;
 	height: 103px;
 }
-.llamado-amarillo .llamado-boton a{
+.llamado-amarillo .llamado-accion-puestos-amarillo .llamado-boton a{
 	padding: 12px 40px 12px 55px;
 	margin-top: 28px;
 	font-size: 18px;
@@ -1222,7 +1242,7 @@ h1#page-title{
 #block-block-19 .llamado-accion-puestos-amarillo .llamado-boton a{
 	padding: 12px 40px 12px 30px;
 }
-.llamado-amarillo .llamado-texto p{
+.llamado-amarillo .llamado-accion-puestos-amarillo .llamado-texto p{
 	margin: 22px 0px;
 }
 /**/
@@ -1353,7 +1373,10 @@ h1#page-title{
 }
 .block-tab-body ul li,
 .ulcirclen li{
+	padding-left: 20px;
 	background-image: url('../images/ulcirclen.png');
+	background-repeat:no-repeat;
+	background-position: left center;	
 
 	font-family: Roboto, sans-serif !important;
 	color: #404041 !important;
@@ -1361,7 +1384,7 @@ h1#page-title{
 	font-weight: 400 !important;	
 }
 
-.view-submenu-detalle-productos{
+/*.view-submenu-detalle-productos{
 	height: 70px;
 	box-sizing:border-box;
 	border-bottom: 1px solid #B7B9BB;
@@ -1386,7 +1409,7 @@ h1#page-title{
 .view-submenu-detalle-productos .submenu ul li a:hover{
 	color: #EEB91C;
 	font-weight: bold;
-}
+}*/
 
 .view-productos .views-row{
 	padding: 60px 0px;
@@ -2652,4 +2675,72 @@ form.comment-form .form-actions input{
 	font-size: 15px;
 }
 
+
+/* SOLDADURA */
+
+#block-block-33{
+	border-top: 1px solid #099DAD;
+	border-bottom: 1px solid #B7B9BB;
+	background-color: #EDEDEE;
+	padding: 30px 0px 60px;
+}
+#block-block-33 .content{
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;	
+}
+#block-block-33 .columnas-body{
+	border-bottom: 1px solid #A6A8AB;
+
+}
+#block-block-33 .content h2{
+	color: #009DAD;
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+#block-block-33 .content .col-1-3{
+	width: 33%;
+}
+#block-block-33 .content li,
+#block-block-34 .content li{
+	font-size: 14px !important;
+}
+#block-block-34 .content p{
+  color: #404041;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+}
+#block-block-34 .content h2{
+	font-size: 28px;
+	color: #58595B;
+}
+#block-block-34{
+	padding: 50px 0px 30px;
+	border-bottom: 1px solid #A6A8AB;
+}
+#block-block-34 .col-left{
+	width: 470px;
+}
+#block-block-34 .col-right li{
+	margin-bottom: 20px;
+}
+
+#block-block-36{
+	padding: 5px 0px 60px;
+}
+.link-cotizar-final a{
+  display: block;
+  padding: 10px 40px;
+  border: 4px solid #E6AA22;
+  font-family: Montserrat, sans-serif;
+  color: #E6AA22;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  float: right;
+  margin-top: 10px;	
+}
 /*********************/

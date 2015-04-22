@@ -15,8 +15,9 @@ jQuery( document ).ready(function() {
 		e.preventDefault();
         var currentAttrValue = jQuery(this).attr('href');
         // Show/Hide Tabs
-		jQuery('.block-tab-body .view-productos .views-row').hide();
-        jQuery('.block-tab-body .view-productos .views-row'+currentAttrValue).fadeIn(400);
+		var divtop = jQuery(this).parents('.block-tab-top').next('.block-tab-body');
+		divtop.find('.view-productos .views-row').hide();
+        divtop.find('.view-productos .views-row'+currentAttrValue).fadeIn(400);
  
         // Change/remove current tab to active
         jQuery(this).parent('div').parent('div').parent('li').addClass('active').siblings().removeClass('active'); 

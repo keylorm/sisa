@@ -47,8 +47,44 @@ jQuery( document ).ready(function() {
 		
 		
 	});	
-	
+
+
+
+	placeholder_comment();
 	
 	
 });
 
+
+
+jQuery( document ).ajaxComplete(function() {
+  placeholder_comment();
+});
+
+
+
+function placeholder_comment(){
+		jQuery(".comment-form .field-type-text").each(function() {
+		var label='';
+		var id_campo=jQuery(this).attr('id');
+
+		label=jQuery('#'+id_campo+' label').text();
+		
+
+		jQuery('#'+id_campo+' input').attr('placeholder', label);
+
+		jQuery('#'+id_campo+' label').hide();
+	});
+	
+	jQuery(".comment-form .field-type-text-long").each(function() {
+		var label='';
+		var id_campo=jQuery(this).attr('id');
+
+		label=jQuery('#'+id_campo+' label').text();
+		
+
+		jQuery('#'+id_campo+' textarea').attr('placeholder', label);
+
+		jQuery('#'+id_campo+' label').hide();
+	});
+}

@@ -31,7 +31,7 @@ body .header{
 	
 }
 .header .menu li a{
-	
+	min-width: 80px;
 	/*margin-right: 0px;*/
 	padding: 10px 5px;
 	/*padding-bottom: 0px;*/
@@ -47,9 +47,21 @@ body .header{
 	text-decoration: none;
 	border: 2px solid white;
 	min-height: 35px;
-	word-wrap: break-word;
-	
+	word-wrap: break-word;	
 }
+.header .menu li a.menu-684,
+.header .menu li a.menu-689{
+	text-align:center;
+}
+.header .menu li a.menu-685{
+	padding-left:25px;
+	box-sizing:border-box;
+}
+.header .menu li a.menu-688{
+	padding-left:30px;
+	box-sizing:border-box;	
+}
+
 .header .menu li:hover a,
 .header .menu li a.active{
   border: 2px solid #099dad;
@@ -346,8 +358,8 @@ body .header{
 
 .home-cualidades{
 	overflow:hidden;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 60px;
+	margin-bottom: 20px;
 }
 
 .home-cualidades .col-1-3{
@@ -481,11 +493,10 @@ body .header{
 	margin-top: 23px;	
 }
 
-
 .home-pioneros{
 	overflow:hidden;
 	background-color: #F5F5F6;
-	margin-top: 30px;
+	margin-top: 45px;
 }
 .home-pioneros-exito-texto{
 	float:left;
@@ -790,7 +801,7 @@ h2.amarillo{
 }
 #block-block-9{
 	float:right;
-	margin-top: 25px;
+	margin-top: 0px;
 }
 #block-block-9 .stLarge{
 	width: 25px !important; height: 25px !important;
@@ -847,7 +858,7 @@ h1.title{
 	padding: 0px; padding-left: 20px;
 }
 .columnas-body .col-texto.col-right ul li{
-	color: #009DAD; font-size: 25px;
+	color: #009DAD; font-size: 21px;
 }
 
 #block-block-10{
@@ -882,6 +893,9 @@ h2.amarillo{
 #block-block-12{
 	padding: 50px 0px;
 	border-bottom: 1px solid #D9DBDC;
+}
+.page-node-24 #block-block-12{
+	border: none;
 }
 
 .inno-pioneros .inno-pioneros-exito-texto{
@@ -1063,6 +1077,7 @@ h1#page-title{
 	background-position: left center;
 	color: #58595B;
 	font-weight: normal;	
+	margin-top: 0px; margin-bottom: 0px;
 }
 .page-node-8 h1{
 	padding-left: 70px;
@@ -1479,6 +1494,12 @@ h1#page-title{
 .block-tab-top{
 	border-bottom: 1px solid #B7B9BB;
 }
+#block-views-productos-block-5{
+	border-top: 1px solid #099DAD;
+}
+#block-views-productos-block-6{
+	border-bottom: 1px solid #099DAD;
+}
 .block-tab-top .view-productos{
 	width: 1000px;
 	margin: 0 auto;
@@ -1496,9 +1517,10 @@ h1#page-title{
   font-family: Roboto, sans-serif;
   color: #404041;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   float:left;
+  letter-spacing: 1px;
   margin-right: 20px;
 }
 .block-tab-top .view-content ul{
@@ -1590,6 +1612,7 @@ h1#page-title{
 	text-align:center;
 	color: #FFF;
 	line-height: 100px;
+	font-size: 32px;
 }
 .not-front .flex-caption .cap-content h3{
 	margin-bottom: 0px;
@@ -1684,8 +1707,13 @@ h1#page-title{
 	display: none;
 }
 .page-node-24 .below-content .field-name-field-label-para-bloque-marcas{
+	
+	/*padding-top: 15px;*/
+}
+.below-content #block-node-fields-block-3{
 	border-top: 1px solid #B7B9BB;
 	padding-top: 15px;
+	padding-bottom: 0px;
 }
 .field-marcas .content{
   max-width: 1000px;
@@ -1815,17 +1843,17 @@ h1#page-title{
 
 /* ACTUALIDAD */
 .sidebar-second .main-content{
-	display:table;
+	/*display:table;*/
 }
 .sidebar-second .main{
 	float:left;
-	display:table-column;
+	/*display:table-column;*/
 }
 .sidebar-second h1#page-title{
 	line-height: 25px;
 }
 #sidebar-second{
-	display:table-cell;
+	/*display:table-cell;*/
 	width: 315px;
 	border-left: 1px solid #D0D2D3;
 	float: right;
@@ -1838,7 +1866,7 @@ h1#page-title{
 	font-weight: bold;	
 }
 #block-views-categorias-de-blog-block h2,
-#block-views-blog-block-2 h2{
+.posteos-sidebar h2{
 	display:block;
 	color: #E6AA22;
 	padding-right: 25px;
@@ -1851,7 +1879,7 @@ h1#page-title{
 }
 
 #block-views-categorias-de-blog-block .content,
-#block-views-blog-block-2 .content{
+.posteos-sidebar .content{
 	float:left;
 	clear:both;
 }
@@ -1917,17 +1945,17 @@ h1#page-title{
 	float:left;
 	margin-top: -11px;
 }
-#block-views-blog-block-2 .view-blog{
+.posteos-sidebar .view-blog{
 	padding-bottom: 10px;
 	
 }
-#block-views-blog-block-2 .views-row{
+.posteos-sidebar .views-row{
 	width: 100%;
 	margin-right: 0px;
 	margin-bottom: 15px;
 }
 
-#block-views-blog-block-2 .views-row .views-field-title a{
+.posteos-sidebar .view-content .views-row .views-field-title span a{
 	color: #404041;
 	font-family: Roboto, sans-serif;
 	font-size: 15px;
@@ -1937,13 +1965,13 @@ h1#page-title{
 	line-height: 20px;
 	margin: 6px 0px;
 }
-#block-views-blog-block-2 .views-row .views-field-nothing{
+.posteos-sidebar .views-row .views-field-nothing{
 	color: #E6AA22;
 	font-family: Roboto, sans-serif;
 	font-size: 12px;
 	font-weight: 500;	
 }
-#block-views-blog-block-2 .views-row .views-field-nothing .fecha-blog{
+.posteos-sidebar .views-row .views-field-nothing .fecha-blog{
 	text-transform: uppercase;
 }
 
@@ -2089,7 +2117,8 @@ h1#page-title{
 	font-size: 15px;
 	font-weight: 400;
 	padding-bottom: 15px;
-	border-bottom: 1px solid #D0D2D3;	
+	border-bottom: 1px solid #D0D2D3;
+	margin-bottom: 15px;	
 }
 .node-type-blog .field-name-post-date{
 	color: #404041;
@@ -2145,16 +2174,16 @@ h1#page-title{
 	font-size: 12px;
 }
 
-form.comment-form::-webkit-input-placeholder {
+form.comment-form ::-webkit-input-placeholder {
    color: #009DAD;
 }
-form.comment-form:-moz-placeholder { /* Firefox 18- */
+form.comment-form :-moz-placeholder { /* Firefox 18- */
    color: #009DAD;
 }
-form.comment-form::-moz-placeholder {  /* Firefox 19+ */
+form.comment-form ::-moz-placeholder {  /* Firefox 19+ */
    color: #009DAD;
 }
-form.comment-form:-ms-input-placeholder {  
+form.comment-form :-ms-input-placeholder {  
    color: #009DAD;  
 }
 form.comment-form input[type='text']{
@@ -2217,9 +2246,9 @@ form.comment-form .form-actions input{
 }
 .page-node-36{
 }
-.main-content{
+/*.main-content{
 	padding-bottom: 40px;
-}
+}*/
 #block-views-puestos-disponibles-block{
 	clear:both;
 	overflow:hidden;	
@@ -2262,6 +2291,16 @@ form.comment-form .form-actions input{
 	font-weight: 400;	
 	border-bottom: 1px solid #009DAD;
 }
+
+#webform-ajax-wrapper-36 .webform-client-form select{
+background-image: url('../images/flecha_select.png');
+background-repeat: no-repeat;
+background-position: 97% 50%;
+ -moz-appearance: none;
+ -webkit-appearance: none;
+ appearance: none;
+}
+
 #webform-ajax-wrapper-36 .webform-client-form textarea,
 #webform-ajax-wrapper-43 .webform-client-form textarea{
 	width: 100%;
@@ -2348,6 +2387,9 @@ form.comment-form .form-actions input{
 
 /* SERVICIO TÉCNICO */
 
+.page-node-37 .imagen-top-caption{
+	padding: 30px 105px
+}
 .servicio-tec-col1{
 	width: 435px;
 	float:left;
@@ -2418,7 +2460,9 @@ form.comment-form .form-actions input{
 	text-align:center;
 	float:left;
 }
-
+.page-node-38 #webform-ajax-wrapper-43{
+	padding-bottom: 70px;
+}
 .page-node-38 #webform-ajax-wrapper-43 .form-actions{
 	margin: 0px;
 	margin-top: -106px;
@@ -2569,7 +2613,7 @@ form.comment-form .form-actions input{
   padding-left: 70px;
   background-image: url(../images/titulo_repuestos.png);
 }
-.page-node-56 .node-56 .columnas-body .col-texto.col-right ul li{
+.page-node-56 #node-56 .columnas-body .col-texto.col-right ul li{
 	color: #E7452E;
 }
 
@@ -2638,6 +2682,9 @@ form.comment-form .form-actions input{
 #block-views-nodo-completo-block h2{
 	color: #58595B;
 }
+#block-block-28 h2{
+	margin-top: 50px;
+}
 #block-block-28 .columnas-body p,
 #block-views-nodo-completo-block .columnas-body p{
 	font-family: Roboto, sans-serif;
@@ -2678,6 +2725,9 @@ form.comment-form .form-actions input{
 }
 #block-views-nodo-completo-block{
 	padding: 50px 0px;
+}
+.page-node-56 #block-views-nodo-completo-block{
+	padding: 30px 0px;
 }
 
 #block-views-nodo-completo-block .field-type-text-with-summary{
@@ -2760,7 +2810,7 @@ form.comment-form .form-actions input{
 /* EQUIPO PARA SOLDAR */
 
 .page-node-62 .field-name-field-label-para-bloque-marcas{
-	padding-top: 20px;
+	padding-top: 20px; padding-bottom: 20px;
 }
 .page-node-62 .node-pagina-productos .marcas,
 .page-node-62 .node-pagina-productos .field-name-field-label-para-bloque-marcas{
@@ -2789,6 +2839,9 @@ form.comment-form .form-actions input{
 
 /* POSICIONAMIENTO Y SOLDADURA */
 
+.page-node-64 .imagen-top-caption{
+	padding: 40px 105px;
+}
 .page-node-64 .btn_catalogo{
 	border-top: 1px solid #B7B9BB;
 	padding-top: 15px;
@@ -2830,6 +2883,17 @@ form.comment-form .form-actions input{
 }
 .node-type-producto-destacado .marcas ul{
 	margin-top: 0px;
+}
+.node-type-producto-destacado .colorbox{
+	display:block;
+	background-image: url('../images/icon_more.jpg');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	height: 240px;	
+}
+.node-type-producto-destacado .colorbox img{
+	position:relative;
+	z-index: -5;	
 }
 
 

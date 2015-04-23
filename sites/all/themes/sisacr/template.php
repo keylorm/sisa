@@ -121,6 +121,8 @@ function sisacr_page_alter(&$page) {
 function sisacr_preprocess_node(&$vars) {
   // Add a striping class.
   $vars['classes_array'][] = 'node-' . $vars['zebra'];
+
+  
 }
 
 function sisacr_preprocess_block(&$vars, $hook) {
@@ -143,4 +145,5 @@ function sisacr_preprocess_page(&$vars) {
     $vars['theme_hook_suggestion'] = 'page__'.$vars['node']->type; //
   }
 }
+
 
